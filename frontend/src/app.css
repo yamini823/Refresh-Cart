@@ -1,0 +1,63 @@
+/* Global theme variables */
+:root {
+  --primary-light: #14b8a6; /* teal */
+  --primary-dark: #06b6d4; /* lighter teal */
+  --background-light: #f5f5f2;
+  --background-dark: #1e293b;
+  --text-light: #111827;
+  --text-dark: #f1f5f9;
+  --card-bg-light: #ffffff;
+  --card-bg-dark: #334155;
+  --accent-orange: #ff3e00;
+  --gradient: linear-gradient(135deg, var(--primary-light), var(--primary-dark));
+}
+
+/* Dark mode overrides */
+body.dark {
+  --background-light: var(--background-dark);
+  --text-light: var(--text-dark);
+  --card-bg-light: var(--card-bg-dark);
+}
+
+/* Apply background to body */
+body {
+  background: var(--background-light);
+  color: var(--text-light);
+  font-family: 'Inter', sans-serif;
+  transition: background 0.3s, color 0.3s;
+}
+
+/* Utility classes */
+.gradient-bg {
+  background: var(--gradient);
+  color: white;
+}
+
+/* Button base */
+.btn-primary {
+  background: var(--gradient);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btn-primary:hover {
+  opacity: 0.9;
+}
+
+/* Card base */
+.card {
+  background: var(--card-bg-light);
+  border-radius: 24px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.05);
+  padding: 24px;
+  transition: transform 0.3s, background 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}

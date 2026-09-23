@@ -1,0 +1,212 @@
+.chat-page{
+
+  background:#f6f7fb;
+
+  min-height:100vh;
+
+  display:flex;
+
+  justify-content:center;
+
+  align-items:center;
+
+}
+
+.chat-box{
+
+  width:450px;
+
+  background:white;
+
+  border-radius:30px;
+
+  overflow:hidden;
+
+  box-shadow:
+    0 8px 24px rgba(0,0,0,0.08);
+
+}
+
+.chat-header{
+
+  background:#16a34a;
+
+  color:white;
+
+  padding:22px;
+
+  font-size:24px;
+
+  font-weight:700;
+
+}
+
+.messages{
+
+  padding:24px;
+
+  height:420px;
+
+}
+
+.support-msg,
+.user-msg{
+
+  padding:16px;
+
+  border-radius:18px;
+
+  margin-bottom:18px;
+
+  width:fit-content;
+
+  max-width:80%;
+
+}
+
+.support-msg{
+
+  background:#eef8ee;
+
+}
+
+.user-msg{
+
+  background:#16a34a;
+
+  color:white;
+
+  margin-left:auto;
+
+}
+
+.chat-input{
+
+  display:flex;
+
+  border-top:1px solid #eee;
+
+}
+
+.chat-input input{
+
+  flex:1;
+
+  height:60px;
+
+  border:none;
+
+  padding:0 18px;
+
+  font-size:16px;
+
+  outline:none;
+
+}
+
+.chat-input button{
+
+  width:120px;
+
+  border:none;
+
+  background:#16a34a;
+
+  color:white;
+
+  font-size:16px;
+
+  font-weight:700;
+
+  cursor:pointer;
+
+}
+.chat-page{
+  min-height:100vh;
+  background:#f4f7fb;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.chat-container{
+  width:500px;
+  height:750px;
+  background:white;
+  border-radius:24px;
+  overflow:hidden;
+  box-shadow:0 10px 40px rgba(0,0,0,.12);
+}
+
+.chat-header{
+  height:80px;
+  background:linear-gradient(
+    135deg,
+    #16a34a,
+    #22c55e
+  );
+  color:white;
+  display:flex;
+  align-items:center;
+  padding:0 25px;
+  font-size:28px;
+  font-weight:700;
+}
+
+.chat-body{
+  height:590px;
+  overflow-y:auto;
+  padding:25px;
+  background:#f8fafc;
+}
+
+.message{
+  max-width:80%;
+  padding:14px 18px;
+  margin-bottom:16px;
+  border-radius:18px;
+  line-height:1.6;
+  font-size:15px;
+  word-wrap:break-word;
+}
+
+.bot{
+  background:white;
+  border:1px solid #e5e7eb;
+  color:#111827;
+  margin-right:auto;
+}
+
+.user{
+  background:#16a34a;
+  color:white;
+  margin-left:auto;
+}
+
+.chat-footer{
+  height:80px;
+  display:flex;
+  border-top:1px solid #e5e7eb;
+}
+
+.chat-footer input{
+  flex:1;
+  border:none;
+  outline:none;
+  padding:0 20px;
+  font-size:16px;
+}
+
+.chat-footer button{
+  width:130px;
+  border:none;
+  background:#16a34a;
+  color:white;
+  font-size:16px;
+  font-weight:700;
+  cursor:pointer;
+}
+
+.chat-footer button:hover{
+  background:#15803d;
+}

@@ -1,0 +1,138 @@
+.admin-sidebar {
+  width: 260px;
+  height: 100vh;
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  color: #f8fafc;
+  display: flex;
+  flex-direction: column;
+  padding: 30px 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  box-shadow: 4px 0 25px rgba(0, 0, 0, 0.15);
+  z-index: 100;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.sidebar-brand {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 40px;
+  padding-left: 10px;
+}
+
+.brand-logo {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.sidebar-brand h2 {
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  background: linear-gradient(to right, #10b981, #34d399);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0;
+}
+
+.sidebar-brand .badge {
+  font-size: 11px;
+  font-weight: 600;
+  color: #94a3b8;
+  background: rgba(255, 255, 255, 0.08);
+  padding: 3px 8px;
+  border-radius: 12px;
+  margin-top: 6px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.sidebar-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex-grow: 1;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 14px 18px;
+  border-radius: 12px;
+  cursor: pointer;
+  color: #94a3b8;
+  font-size: 15px;
+  font-weight: 550;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-item:hover {
+  background: rgba(255, 255, 255, 0.05);
+  color: #f1f5f9;
+  transform: translateX(4px);
+}
+
+.menu-item.active {
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  color: #ffffff;
+  box-shadow: 0 4px 20px rgba(16, 185, 129, 0.3);
+}
+
+.menu-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
+
+.menu-item.active .menu-icon {
+  transform: scale(1.15);
+}
+
+.sidebar-footer {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding-top: 20px;
+}
+
+.return-btn {
+  margin-top: 10px;
+  color: #ef4444;
+}
+
+.return-btn:hover {
+  background: rgba(239, 68, 68, 0.1);
+  color: #f87171;
+}
+
+/* Responsive design */
+@media (max-width: 992px) {
+  .admin-sidebar {
+    width: 80px;
+    padding: 20px 10px;
+    align-items: center;
+  }
+  
+  .sidebar-brand h2, 
+  .sidebar-brand .badge,
+  .menu-text {
+    display: none;
+  }
+  
+  .sidebar-brand {
+    align-items: center;
+    padding-left: 0;
+  }
+  
+  .menu-item {
+    justify-content: center;
+    padding: 15px;
+  }
+  
+  .menu-item:hover {
+    transform: none;
+  }
+}

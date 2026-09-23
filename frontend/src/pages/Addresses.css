@@ -1,0 +1,132 @@
+.address-page {
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 0 20px 80px;
+}
+
+.address-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.address-header h1 {
+  font-size: 38px;
+  font-weight: 700;
+  color: #111827;
+}
+
+.add-btn {
+  background: #16a34a;
+  color: white;
+  border: none;
+  padding: 14px 28px;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.add-btn:hover {
+  background: #15803d;
+}
+
+.address-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+  gap: 30px;
+}
+
+.address-card {
+  background: #fff;
+  border-radius: 22px;
+  padding: 28px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+
+.address-card:hover {
+  transform: translateY(-5px);
+}
+
+.address-type {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+
+.address-card h3 {
+  font-size: 22px;
+  margin-bottom: 15px;
+  color: #111827;
+}
+
+.address-card p {
+  margin-bottom: 12px;
+  color: #6b7280;
+  line-height: 1.6;
+}
+
+.address-actions {
+  display: flex;
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.edit-btn,
+.delete-btn {
+  flex: 1;
+  border: none;
+  padding: 12px 16px;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.edit-btn {
+  background: #2563eb;
+  color: white;
+}
+
+.edit-btn:hover {
+  background: #1d4ed8;
+  transform: scale(1.02);
+}
+
+.delete-btn {
+  background: #ef4444;
+  color: white;
+}
+
+.delete-btn:hover {
+  background: #dc2626;
+  transform: scale(1.02);
+}
+
+.empty-address {
+  width: 100%;
+  text-align: center;
+  padding: 80px 20px;
+  background: white;
+  border-radius: 20px;
+}
+
+.empty-address h3 {
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+
+.empty-address p {
+  color: gray;
+}

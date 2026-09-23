@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+
+.deals-page {
+  background: #f8fafc;
+  min-height: 100vh;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+/* =========================
+   HERO BANNER
+========================= */
+.deals-hero {
+  background: linear-gradient(135deg, #7c2d12 0%, #9a3412 60%, #c2410c 100%);
+  padding: 60px 6%;
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.deals-hero::before {
+  content: "🔥";
+  position: absolute;
+  right: 8%;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 130px;
+  opacity: 0.15;
+}
+
+.deals-hero::after {
+  content: "";
+  position: absolute;
+  top: -60px;
+  left: -60px;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.deals-hero-inner {
+  position: relative;
+  z-index: 1;
+  max-width: 700px;
+}
+
+.deals-hero-tag {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  margin-bottom: 16px;
+}
+
+.deals-hero h1 {
+  font-size: 48px;
+  font-weight: 800;
+  letter-spacing: -1.5px;
+  margin-bottom: 10px;
+  line-height: 1.1;
+}
+
+.deals-hero p {
+  font-size: 16px;
+  color: #fed7aa;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+.deals-stats {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.deal-stat {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.deal-stat strong {
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.deal-stat span {
+  font-size: 12px;
+  color: #fed7aa;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.deal-stat-divider {
+  width: 1px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* =========================
+   FILTER BAR
+========================= */
+.deals-filter-bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 25px 6%;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.deals-filter-bar::-webkit-scrollbar {
+  display: none;
+}
+
+.filter-chip {
+  white-space: nowrap;
+  padding: 9px 18px;
+  border-radius: 25px;
+  border: 1.5px solid #e2e8f0;
+  background: #ffffff;
+  color: #64748b;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  transition: all 0.2s ease;
+}
+
+.filter-chip:hover {
+  border-color: #f97316;
+  color: #f97316;
+  background: #fff7ed;
+}
+
+.filter-chip.active {
+  background: linear-gradient(135deg, #f97316, #ea580c);
+  color: white;
+  border-color: transparent;
+  box-shadow: 0 4px 12px rgba(249, 115, 22, 0.25);
+}
+
+/* =========================
+   DEALS CONTAINER
+========================= */
+.deals-container {
+  padding: 10px 6% 60px;
+}
+
+.deals-header {
+  margin-bottom: 28px;
+}
+
+.deals-header h2 {
+  font-size: 22px;
+  font-weight: 800;
+  color: #0f172a;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  letter-spacing: -0.5px;
+}
+
+.deals-count {
+  font-size: 13px;
+  font-weight: 700;
+  background: #fff7ed;
+  color: #ea580c;
+  padding: 4px 10px;
+  border-radius: 12px;
+  border: 1px solid #fed7aa;
+}
+
+/* PRODUCTS GRID */
+.products {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  align-items: start;
+}
+
+/* LOADER & EMPTY */
+.deals-loader,
+.deals-empty {
+  text-align: center;
+  padding: 80px 0;
+  font-size: 16px;
+  color: #64748b;
+  font-weight: 600;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1200px) {
+  .products {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .products {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .deals-hero h1 {
+    font-size: 36px;
+  }
+  .deals-stats {
+    gap: 18px;
+  }
+}
+
+@media (max-width: 600px) {
+  .products {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  .deals-hero {
+    padding: 40px 4%;
+  }
+  .deals-hero h1 {
+    font-size: 28px;
+  }
+  .deals-container {
+    padding: 10px 4% 40px;
+  }
+  .deals-filter-bar {
+    padding: 18px 4%;
+  }
+}

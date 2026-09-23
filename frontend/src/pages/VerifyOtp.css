@@ -1,0 +1,218 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.verify-page {
+  min-height: 100vh;
+  background-color: #f5f5f5;
+  font-family: Arial, sans-serif;
+}
+
+.verify-navbar {
+  width: 100%;
+  height: 80px;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 60px;
+  border-bottom: 1px solid #ddd;
+}
+
+.logo-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-section h1 {
+  color: #22c55e;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.logo {
+  width: 45px;
+  height: 45px;
+}
+
+.nav-buttons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.login-btn {
+  background: transparent;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.signup-btn {
+  background-color: #22c55e;
+  color: white;
+  border: none;
+  padding: 12px 22px;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.verify-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+}
+
+.verify-card {
+  width: 520px;
+  background-color: white;
+  border-radius: 20px;
+  padding: 50px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+.card-logo {
+  width: 70px;
+  margin-bottom: 15px;
+}
+
+.verify-card h2 {
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  color: gray;
+  margin-bottom: 35px;
+}
+
+.otp-message {
+  margin-bottom: 30px;
+  color: #666;
+}
+
+.otp-message span {
+  font-weight: bold;
+}
+
+.verify-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.verify-card label {
+  text-align: left;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.verify-card input {
+  width: 100%;
+  padding: 18px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  font-size: 24px;
+  text-align: center;
+  letter-spacing: 10px;
+  outline: none;
+}
+
+.verify-card input:focus {
+  border-color: #22c55e;
+}
+
+.verify-btn {
+  width: 100%;
+  margin-top: 10px;
+  padding: 18px;
+  background-color: #22c55e;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.verify-btn:hover {
+  background-color: #16a34a;
+}
+
+.change-text {
+  margin-top: 25px;
+  color: #22c55e;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.bottom-text {
+  margin-top: 25px;
+  color: #666;
+}
+
+.bottom-text span {
+  color: #22c55e;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
+@media (max-width: 600px) {
+  .verify-navbar {
+    padding: 0 20px;
+  }
+
+  .logo-section h1 {
+    font-size: 28px;
+  }
+
+  .verify-card {
+    width: 100%;
+    padding: 35px 25px;
+  }
+
+  .verify-card h2 {
+    font-size: 32px;
+  }
+}
+.verify-navbar{
+  width:100%;
+  display:flex;
+  justify-content:flex-end;
+  align-items:center;
+  padding:20px 40px;
+  background:white;
+}
+
+.nav-buttons{
+  display:flex;
+  gap:12px;
+}
+
+.login-btn{
+  padding:10px 20px;
+  border:1px solid #16a34a;
+  background:white;
+  color:#16a34a;
+  border-radius:8px;
+  cursor:pointer;
+  font-weight:600;
+}
+
+.signup-btn{
+  padding:10px 20px;
+  border:none;
+  background:#16a34a;
+  color:white;
+  border-radius:8px;
+  cursor:pointer;
+  font-weight:600;
+}

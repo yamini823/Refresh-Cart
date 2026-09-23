@@ -1,0 +1,200 @@
+.search-page {
+
+  background: #f7f8fa;
+
+  min-height: 100vh;
+}
+
+/* TOP */
+
+.search-top {
+
+  padding: 35px 70px 20px;
+}
+
+/* SEARCH BAR */
+
+.search-bar-row {
+
+  display: flex;
+
+  gap: 15px;
+
+  margin-bottom: 22px;
+}
+
+.search-bar-row input {
+
+  flex: 1;
+
+  height: 54px;
+
+  border: 1px solid #e5e7eb;
+
+  border-radius: 14px;
+
+  padding: 0 18px;
+
+  font-size: 15px;
+
+  background: white;
+
+  outline: none;
+}
+
+.search-bar-row button {
+
+  width: 130px;
+
+  border: none;
+
+  border-radius: 14px;
+
+  background: #16a34a;
+
+  color: white;
+
+  font-size: 15px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+/* FILTERS */
+
+.filter-row {
+
+  display: flex;
+
+  gap: 16px;
+
+  flex-wrap: wrap;
+}
+
+.filter-row select {
+
+  width: 170px;
+
+  height: 48px;
+
+  border: 1px solid #e5e7eb;
+
+  border-radius: 12px;
+
+  padding: 0 14px;
+
+  background: white;
+
+  font-size: 14px;
+
+  outline: none;
+
+  cursor: pointer;
+}
+
+/* HEADING */
+
+.search-heading {
+
+  padding: 0 70px 25px;
+}
+
+.search-heading h1 {
+
+  font-size: 32px;
+
+  color: #111827;
+
+  margin-bottom: 6px;
+
+  font-weight: 700;
+}
+
+.search-heading p {
+
+  color: #6b7280;
+
+  font-size: 15px;
+}
+
+/* GRID */
+
+.products-grid {
+
+  padding: 0 70px 70px;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, 1fr);
+
+  gap: 22px;
+
+  align-items: start;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:1200px){
+
+  .products-grid {
+
+    grid-template-columns:
+      repeat(3,1fr);
+  }
+}
+
+@media(max-width:900px){
+
+  .products-grid {
+
+    grid-template-columns:
+      repeat(2,1fr);
+  }
+
+  .search-top,
+  .search-heading,
+  .products-grid {
+
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media(max-width:600px){
+
+  .products-grid {
+
+    grid-template-columns: 1fr;
+  }
+
+  .search-bar-row {
+
+    flex-direction: column;
+  }
+
+  .search-bar-row button {
+
+    width: 100%;
+    height: 50px;
+  }
+
+  .filter-row {
+
+    flex-direction: column;
+  }
+
+  .filter-row select {
+
+    width: 100%;
+  }
+
+}
+.products-grid .cart-btn{
+
+  background:#22c55e !important;
+
+  color:white !important;
+
+}

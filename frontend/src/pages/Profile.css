@@ -1,0 +1,265 @@
+.profile-page{
+
+  background:#f6f7fb;
+
+  min-height:100vh;
+
+}
+
+.profile-container{
+
+  max-width:1200px;
+
+  margin:auto;
+
+  padding:40px;
+
+}
+
+/* TOP */
+
+.profile-top-card{
+
+  background:white;
+
+  border-radius:30px;
+
+  padding:35px;
+
+  display:flex;
+
+  justify-content:space-between;
+
+  align-items:center;
+
+  box-shadow:
+    0 8px 24px rgba(0,0,0,0.05);
+
+}
+
+.profile-left{
+
+  display:flex;
+
+  align-items:center;
+
+  gap:25px;
+
+}
+
+.profile-left img{
+
+  width:110px;
+
+  height:110px;
+
+  border-radius:50%;
+
+}
+
+.profile-left h1{
+
+  font-size:42px;
+
+  color:#111827;
+
+}
+
+.profile-left p{
+
+  color:#6b7280;
+
+  margin-top:8px;
+
+  font-size:17px;
+
+}
+
+.edit-btn{
+
+  border:none;
+
+  background:#16a34a;
+
+  color:white;
+
+  padding:16px 28px;
+
+  border-radius:16px;
+
+  font-size:16px;
+
+  font-weight:700;
+
+  cursor:pointer;
+
+}
+
+/* STATS */
+
+.stats-grid{
+
+  display:grid;
+
+  grid-template-columns:
+    repeat(3,1fr);
+
+  gap:20px;
+
+  margin-top:30px;
+
+}
+
+.stat-card{
+
+  background:white;
+
+  border-radius:24px;
+
+  padding:30px;
+
+  text-align:center;
+
+  box-shadow:
+    0 4px 14px rgba(0,0,0,0.05);
+
+}
+
+.stat-card h2{
+
+  font-size:42px;
+
+  color:#16a34a;
+
+}
+
+.stat-card p{
+
+  margin-top:10px;
+
+  color:#6b7280;
+
+  font-size:16px;
+
+}
+
+/* OPTIONS */
+
+.profile-options{
+
+  margin-top:35px;
+
+  display:grid;
+
+  grid-template-columns:
+    repeat(2,1fr);
+
+  gap:22px;
+
+}
+
+.option-card{
+
+  background:white;
+
+  border-radius:24px;
+
+  padding:28px;
+
+  display:flex;
+
+  align-items:center;
+
+  gap:18px;
+
+  cursor:pointer;
+
+  transition:0.3s;
+
+  box-shadow:
+    0 4px 14px rgba(0,0,0,0.05);
+
+}
+
+.option-card:hover{
+
+  transform:translateY(-4px);
+
+}
+
+.option-card span{
+
+  font-size:36px;
+
+}
+
+.option-card h3{
+
+  font-size:24px;
+
+  color:#111827;
+
+}
+
+.option-card p{
+
+  margin-top:6px;
+
+  color:#6b7280;
+
+}
+
+.logout-card{
+
+  background:#fff1f2;
+
+}
+
+.logout-card h3{
+
+  color:#dc2626;
+
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+  .profile-top-card{
+
+    flex-direction:column;
+
+    gap:25px;
+
+    text-align:center;
+
+  }
+
+  .stats-grid{
+
+    grid-template-columns:1fr;
+
+  }
+
+  .profile-options{
+
+    grid-template-columns:1fr;
+
+  }
+
+}
+.edit-profile-btn{
+  background:#16a34a;
+  color:white;
+  border:none;
+  padding:12px 24px;
+  border-radius:10px;
+  font-size:16px;
+  font-weight:600;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.edit-profile-btn:hover{
+  background:#15803d;
+}
