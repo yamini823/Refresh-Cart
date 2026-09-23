@@ -246,13 +246,33 @@ Place Order
 
 # 📸 Screenshots
 
-[Home Page]
+## 🏠 Home Page
 <img width="1917" height="906" alt="image" src="https://github.com/user-attachments/assets/95ca3711-04fe-4bee-813e-af4ca12faf87" />
 
+## 📝 Signup
+<img width="1901" height="882" alt="image" src="https://github.com/user-attachments/assets/23b02510-0b32-4f6c-ab1e-a1aced64fb07" />
 
-![Products Page](screenshots/products.png)
+## 🔐 Login
+ <img width="1886" height="858" alt="image" src="https://github.com/user-attachments/assets/a67cf207-5968-4a10-aab6-6aa1a3be6323" />
 
-![Shopping Cart](screenshots/cart.png)
+## 📩 OTP Verification
+ <img width="1907" height="866" alt="image" src="https://github.com/user-attachments/assets/66a45643-50da-4268-ac1f-c81f54ae5843" />
+
+## 🛍️ Products
+<img width="1906" height="868" alt="image" src="https://github.com/user-attachments/assets/11a7bcb1-b872-4dd4-81f3-7fb2395b7b55" />
+
+## ❤️ Wishlist
+<img width="1911" height="855" alt="image" src="https://github.com/user-attachments/assets/e007900b-d3ac-4989-9b27-bb3129733fda" />
+
+## 🛒 Shopping Cart
+<img width="1897" height="862" alt="image" src="https://github.com/user-attachments/assets/906824ff-a883-479c-a0ca-280871d9579e" />
+
+## 📋 Orders
+<img width="1892" height="862" alt="image" src="https://github.com/user-attachments/assets/e6122dda-f8e3-4559-93ba-62af454d34d7" />
+
+## 🤖 AI Chatbot
+<img width="1382" height="855" alt="image" src="https://github.com/user-attachments/assets/04ea90ef-7cdb-4df5-8671-4099b02eae61" />
+
 ```
 
 ---
@@ -286,7 +306,6 @@ Through this project, I gained practical experience in:
 * API integration using Axios
 * Responsive UI development
 * Git and GitHub
-* Deployment and environment configuration
 * Debugging frontend/backend integration issues
 
 ---
